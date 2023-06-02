@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="ISO-8859-1">
+  <title>SIGNUP</title>
+  <link rel="shortcut icon" href="images/SIGNUP.jpg">
+</head>
+	<body>
+		<h1>Be our Member</h1>
+		<h2>SignUP Here !!!</h2>
+		
+		<a href="INDEX.html">|  HOME</a> 
+		<br />
+		<br />
+		<form id="myform">
+			
+			<fieldset>
+					<label for="fname">First Name: </label>
+					<input type="text" autocomplete="on" id="fname" name="fname" />
+					<label for="lname">Last Name: </label>
+					<input type="text" autocomplete="on" id="lname" name="lname" />
+					<br />
+					<br />
+
+					<!-- 
+				 The iPhone and some Android devices using the input type="tel" to 
+				 change the virtual keyboard with a numeric keypad.
+				 -->
+					<label for="mobileno">Mobile No: </label>
+					<input type="tel" placeholder="855-xxxx-xxxx" pattern="[855][0-9]{9}" id="mobileno" name="mobileno" autofocus required />
+					<label for="email">Email: </label>
+      				<input type="email" id="email" name="email" autofocus required placeholder="example@xzy.com" />
+					<br />
+					<br />
+					<label for="uname">User Name: </label>
+					
+					<input type="text" autocomplete="on" id="uname" name="uname" />
+					<label for="password">Password: </label>
+					<input type="password" id="password" name="password" autocomplete="off" />
+
+					<br />
+					<br />
+
+					<label for="dob">Date Of Birth:(Calender Will open in Chrome) </label>
+					<input type="date" id="dob" name="dob" />
+
+					<br />
+					<br />
+
+					<label for="gender">Gender: </label>
+					<input type="radio" id="gender" name="gender" value="male" />Male
+					<input type="radio" id="gender" name="gender" value="female" />Female
+
+					<br />
+					<br />
+
+					Hobby:<br>
+					<input type="checkbox" id="cricket" name="cricket" value="cricket" />
+					<label for="cricket">Cricket</label>
+					<input type="checkbox" id="football" name="football" value="football" />
+					<label for="football">Football</label>
+					<input type="checkbox" id="hockey" name="hockey" value="hockey" />
+					<label for="hockey">Hockey</label>
+
+					<br />
+					<br />
+					<label for="country">Select Country:</label>
+					<select name="country" id="country" style="width:160px">
+					  <option value="india">india</option>
+					  <option value="pakistan">pakistan</option>
+					  <option value="africa">africa</option>
+					  <option value="china">china</option>
+					  <option value="other">other</option>
+					</select>
+
+					<br />
+					<br />
+
+					<label for="ADDRESS">Address:</label>
+					<textarea rows="6" cols="50"></textarea>
+
+					<br />
+					<br />
+
+					<label for="file-select">Select File:</label>
+					<input type="file" name="upload" id="file-select">
+
+					<br />
+					<br />
+
+					<label for="file-select">Select JPG/PNG File:</label>
+					<input type="file" accept=".jpg, .png" name="upload" id="file-select">
+
+					<br />
+					<br />
+
+
+					<input type="submit" value="Register">
+					<input type="reset" value="Clear">
+					<a href="LOGIN.HTML">|  Already have an account</a>
+			</fieldset>
+		</form>
+	
+	</body>
+
+</html>
